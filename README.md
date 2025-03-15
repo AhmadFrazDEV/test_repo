@@ -22,3 +22,14 @@ Contains elements to coordinate among programmers, track changes, and support no
 Repositories are storage structures that can hold Code, track Issues, and enable you to collaborate with others.
 
 GitHub enables you to create repositories, edit files using the web interface, commit the changes to the file, upload the files, and a lot more.
+
+# Module - 2
+In this module, you learned that:
+
+A branch is a snapshot of your repository to which you can make changes. 
+
+In the child branch, you can build, make edits, test the changes, and then merge them with the main branch. 
+
+To ensure that changes are made by one member, do not impede or affect the workflow of other members, multiple branches can be created and merged with the main branch.
+
+A pull request is a way to notify other team members of the changes and edits made to the main branch
