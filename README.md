@@ -196,3 +196,27 @@ In the child branch, you can build, make edits, test the changes, and then merge
 To ensure that changes are made by one member, do not impede or affect the workflow of other members, multiple branches can be created and merged with the main branch.
 
 A pull request is a way to notify other team members of the changes and edits made to the main branch
+
+
+# Module - 2
+# Forking a repositry
+Why Use Forks?
+Contribute to Open Source – You can fork a repository, make changes, and submit a pull request to propose updates.
+Experiment Safely – A fork lets you modify a project without breaking the original.
+Personalized Development – You can maintain a separate version of a project for your needs.
+
+How to Fork a Repository?
+-Go to the GitHub Repository you want to fork.
+-Click the "Fork" button in the top right corner.
+-GitHub creates a copy in your own account.
+
+Cloning Your Fork (Local Development)
+After forking, clone it to your local machine:
+ > git clone https://github.com/your-username/forked-repo.git
+Keeping Your Fork Updated
+To sync your fork with the original repository:
+> git remote add upstream https://github.com/original-owner/repo.git
+> git fetch upstream
+> git merge upstream/main
+
+
