@@ -3,43 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
+    <title>Professional Web Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Poppins', sans-serif;
         }
         .navbar {
-            background-color: #333;
-            overflow: hidden;
-            padding: 15px;
-            text-align: center;
+            background-color: #343a40;
         }
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
+        .navbar-brand, .nav-link {
+            color: white !important;
         }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+        .nav-link:hover {
+            color: #f8d210 !important;
         }
         .menu {
             display: flex;
             justify-content: center;
-            padding: 20px;
+            padding: 40px 20px;
+            gap: 20px;
         }
         .menu div {
-            margin: 10px;
             padding: 20px;
             background: #f4f4f4;
-            border-radius: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
         }
         .swiper-container {
-            width: 80%;
-            height: 300px;
+            width: 90%;
+            height: 400px;
             margin: auto;
             margin-top: 20px;
         }
@@ -47,18 +44,29 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
-    <div class="menu">
+    <div class="menu container d-flex flex-wrap justify-content-center">
         <div>Menu 1</div>
         <div>Menu 2</div>
         <div>Menu 3</div>
@@ -66,15 +74,16 @@
     
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="https://source.unsplash.com/800x300/?nature" alt="Slide 1"></div>
-            <div class="swiper-slide"><img src="https://source.unsplash.com/800x300/?city" alt="Slide 2"></div>
-            <div class="swiper-slide"><img src="https://source.unsplash.com/800x300/?technology" alt="Slide 3"></div>
+            <div class="swiper-slide"><img src="images/image1.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="images/image2.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="images/image3.jpg" alt="Slide 3"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
