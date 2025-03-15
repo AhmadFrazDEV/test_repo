@@ -220,3 +220,77 @@ To sync your fork with the original repository:
 > git merge upstream/main
 
 
+# Module - 2 
+
+In this module, you learned that:
+
+GitHub has over 100 million repositories. You can clone a repository and sync changes back to the original. You can also fork a repository and use it as the base for the new project or work on that project independently.
+
+The steps included in a GitHub workflow are:
+
+Clone the remote repository or initialize a Git repository.
+
+Move files to a staging area.
+
+Perform an initial commit.
+
+Create a branch and work on it.
+
+Add files to the staging area and commit.
+
+Push local commits to the remote repository.
+
+Create a pull request for review and merging.
+
+Use the pull operation to update the local repository.
+
+Multiple roles are involved in managing a project: Developer, Integrator, and Repository Administrator.
+
+A Developer working in a group project uses commands like git clone, git pull, git fetch, git push, and git request-pull in addition to the ones needed by a standalone developer.
+
+An Integrator in a group project reviews and integrates changes made by others. Integrators use commands like git pull, git revert, and git push in addition to the ones needed by participants.
+
+Repository Administrators structure how the repository is organized and how users interact with the repository. They also configure the servers needed for accessing the web services and documentation, define email and index settings, and manage the look and feel of the application.
+
+# Git Commands Reference
+
+## Commonly Used Git Commands
+| Command | Description |
+|---------|-------------|
+| `git init` | Initializes a new Git repository |
+| `git clone <repo-url>` | Clones an existing repository to your local machine |
+| `git add .` | Adds all changes to the staging area |
+| `git commit -m "message"` | Commits changes with a message |
+| `git status` | Shows the current state of the working directory |
+| `git log` | Displays commit history |
+| `git diff` | Shows differences between commits, branches, or working directory |
+| `git branch` | Lists, creates, or deletes branches |
+| `git checkout <branch>` | Switches to another branch |
+| `git merge <branch>` | Merges a branch into the current branch |
+| `git remote -v` | Shows remote repository URLs |
+| `git remote add origin <repo-url>` | Adds a remote repository named `origin` |
+| `git fetch upstream` | Fetches changes from the upstream repository |
+| `git pull` | Fetches and integrates changes from a remote repository |
+| `git pull upstream` | Pulls latest changes from the upstream repository |
+| `git merge upstream/main` | Merges upstream changes into the main branch |
+| `git revert <commit>` | Reverts a specific commit |
+| `git reset <commit>` | Resets to a specific commit |
+| `git config --global user.name "Your Name"` | Sets the global Git username |
+| `git config --global user.email "your-email@example.com"` | Sets the global Git email |
+| `git remote rename <old-name> <new-name>` | Renames a remote repository |
+| `git-request-pull` | Requests a pull from another repository |
+| `git-send-email` | Sends patches via email |
+| `git-format-patch` | Prepares patches for sending via email |
+| `git-am` | Applies patches from an email |
+| `git-daemon` | Runs a simple Git server |
+| `git-instaweb` | Instantly browses a Git repository via a web interface |
+| `git-rerere` | Enables reuse of resolved conflicts |
+| `git web` | Starts a web interface for browsing a repository |
+| `git-pull downstream` | Pulls changes from a downstream repository |
+
+This list covers common Git commands for repository management, collaboration, and version control. 🚀
+
+
+
+
+
